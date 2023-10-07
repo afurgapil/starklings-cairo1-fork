@@ -1,9 +1,3 @@
-// primitive_types2.cairo
-// Fill in the rest of the line that has code missing!
-// No hints, there's no tricks, just get used to typing these :)
-
-// I AM NOT DONE
-
 use debug::PrintTrait;
 
 fn main() {
@@ -11,7 +5,7 @@ fn main() {
     // Short strings are actually felts, they are not a real string.
     // Note the _single_ quotes that are used with short strings.
 
-    let mut my_first_initial = 'C';
+    let mut my_first_initial: felt252 = 'C';
     if is_alphabetic(
         ref my_first_initial
     ) {
@@ -24,14 +18,14 @@ fn main() {
         ('Neither alphabetic nor numeric!').print();
     }
 
-    let // Finish this line like the example! What's your favorite short string?
+    let mut my_favorite_short_string: felt252 = '3'; // Finish this line like the example! What's your favorite short string?
     // Try a letter, try a number, try a special character, try a short string!
     if is_alphabetic(
-        ref your_character
+        ref my_favorite_short_string
     ) {
         ('Alphabetical!').print();
     } else if is_numeric(
-        ref your_character
+        ref my_favorite_short_string
     ) {
         ('Numerical!').print();
     } else {

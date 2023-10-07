@@ -5,13 +5,12 @@
 use array::ArrayTrait;
 use debug::PrintTrait;
 
-// I AM NOT DONE
 
 fn main() {
-    let arr0 = ArrayTrait::new();
+    let mut arr0 = ArrayTrait::new();
 
     let mut arr1 = fill_arr(arr0);
-
+    let arr0=arr1;
     // Do not change the following line!
     arr0.print();
 }
